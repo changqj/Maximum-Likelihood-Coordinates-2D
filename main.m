@@ -48,7 +48,7 @@ v0 = v;
 
 v0(1,:) = v(1,:)/size(im,2);
 v0(2,:) = v(2,:)/size(im,1);
-[tri,xx,yy,boundary_markers] = cqj_triangle(v0',0.0001);
+[tri,xx,yy,boundary_markers] = triangle(v0',0.0001);
 innerpoints = [xx,yy]';
 
 
